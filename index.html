@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Evita que los buscadores traten esta demostración como un negocio real. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Demostración de un sitio para Harborleaf Cleaning, una empresa ficticia de limpieza residencial y comercial en Estados Unidos. No reserva citas reales.">
+  <title>Harborleaf Cleaning · Demostración</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23e7f4ec'/%3E%3Cpath fill='%231f6b48' d='M20 7c6 6 9 11 9 16a9 9 0 0 1-16.2 5.4C14 26 15 22 17 18c-2 1-4 3-5 6 1-7 3.2-12 8-17z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!--
+    Harborleaf Cleaning — sitio de demostración
+    ----------------------------------------
+    index.html     estructura y textos visibles
+    css/styles.css colores, diseño y pantallas
+    js/main.js     menú móvil y formulario de prueba
+
+    La empresa, los precios, el teléfono y la dirección son ficticios.
+    Para cambiar el nombre, busca "Harborleaf".
+    Para cambiar colores, edita las variables al inicio de css/styles.css.
+  -->
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <p class="demo-banner">
+    Sitio de demostración. Harborleaf Cleaning es una empresa ficticia. Los precios y los datos de contacto son de ejemplo. Este formulario no envía solicitudes ni confirma citas.
+  </p>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#inicio">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="12" fill="#e7f4ec"></rect>
+          <path fill="#1f6b48" d="M20 7c6 6 9 11 9 16a9 9 0 0 1-16.2 5.4C14 26 15 22 17 18c-2 1-4 3-5 6 1-7 3.2-12 8-17z"></path>
+          <path d="M20 13c1.2 5 2.2 8.2 6.4 11.2" fill="none" stroke="#f7fbf8" stroke-width="1.6" stroke-linecap="round"></path>
+        </svg>
+        <span class="logo__name">Harborleaf <span>Cleaning</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="navegacion">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span data-nav-label>Menú</span>
+      </button>
+
+      <nav class="nav" id="navegacion" data-nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#solicitud">Solicitud</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Empresa ficticia · Estados Unidos</p>
+          <h1>Limpieza cuidada para hogares y espacios de trabajo.</h1>
+          <p class="lead">
+            Esta página muestra cómo podría presentarse un servicio de limpieza residencial y comercial. Harborleaf no existe: sirve para practicar el diseño y, más adelante, conectar un sistema de reservas de verdad.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#solicitud">Probar la solicitud</a>
+            <a class="btn btn--ghost" href="#servicios">Ver servicios de ejemplo</a>
+          </div>
+          <ul class="hero__notes">
+            <li>Precios ilustrativos</li>
+            <li>Sin reseñas inventadas</li>
+            <li>Sin citas confirmadas</li>
+          </ul>
+        </div>
+
+        <aside class="visit-card" aria-label="Ejemplo ilustrativo de una visita. No es una cita confirmada.">
+          <p class="sample-tag">Ejemplo · no es una cita</p>
+          <h2>Visita de mantenimiento para un hogar</h2>
+          <p>Así se vería un resumen antes de acordar un servicio real. En esta demostración nadie va a presentarse en una dirección.</p>
+          <ul class="check-list">
+            <li>Cocina, baños y pisos de uso diario</li>
+            <li>Polvo en superficies que se alcanzan de pie</li>
+            <li>Habitaciones dejadas en orden, sin reorganizar objetos personales</li>
+          </ul>
+          <p class="visit-card__price">
+            <span>Desde</span>
+            <strong>$129</strong>
+            <span>precio de ejemplo</span>
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__heading">
+          <p class="eyebrow">Servicios</p>
+          <h2>Dos tipos de limpieza, explicados como ejemplo.</h2>
+          <p>
+            Todos los precios de esta página son cifras de diseño. No son una oferta, una tarifa publicada ni un contrato.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path fill="currentColor" d="M10 22 24 10l14 12v16a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V22z"></path>
+                <path fill="#fff" d="M20 40V28h8v12H20z"></path>
+              </svg>
+            </div>
+            <h3>Limpieza residencial</h3>
+            <p>Para casas y apartamentos. El alcance real se acordaría según el tamaño del lugar y lo que la persona quiera incluir.</p>
+            <ul>
+              <li>Mantenimiento periódico de habitaciones, cocina y baños</li>
+              <li>Limpieza profunda ocasional, con más tiempo en detalles</li>
+              <li>Apoyo de ejemplo al entrar o salir de una vivienda</li>
+            </ul>
+            <p class="service-card__price">Desde $129 mantenimiento · desde $249 profunda <span class="sample-tag">ejemplo</span></p>
+          </article>
+
+          <article class="service-card service-card--blue">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <rect x="8" y="8" width="32" height="32" rx="2" fill="currentColor"></rect>
+                <path fill="#fff" d="M14 14h6v5h-6zm14 0h6v5h-6zM14 23h6v5h-6zm14 0h6v5h-6zM20 32h8v8h-8z"></path>
+              </svg>
+            </div>
+            <h3>Limpieza comercial</h3>
+            <p>Para oficinas y locales pequeños. En un servicio real, el horario y las zonas se escribirían antes de la primera visita.</p>
+            <ul>
+              <li>Escritorios, salas y cocina de oficina</li>
+              <li>Baños, pisos y vaciado de papeleras</li>
+              <li>Áreas de atención al público, como ejemplo de alcance</li>
+            </ul>
+            <p class="service-card__price">Desde $179 una oficina pequeña <span class="sample-tag">ejemplo</span></p>
+          </article>
+        </div>
+
+        <aside class="note-card">
+          <h3>Dónde irían la licencia y el seguro</h3>
+          <p>
+            Un negocio real mostraría aquí documentos que se puedan comprobar. Esta demostración no inventa números de licencia, pólizas ni certificaciones.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="como-funciona">
+      <div class="container">
+        <div class="section__heading">
+          <p class="eyebrow">Cómo funciona</p>
+          <h2>El recorrido de una solicitud, hasta donde llega esta demo.</h2>
+          <p>
+            Estos pasos describen un proceso posible. En esta página el recorrido se detiene en el formulario: no se prepara un presupuesto ni se aparta un horario.
+          </p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <span class="steps__num">1</span>
+            <h3>Cuentas el espacio</h3>
+            <p>Tipo de lugar, ciudad y una preferencia de día. En la demo puedes usar datos inventados.</p>
+          </li>
+          <li>
+            <span class="steps__num">2</span>
+            <h3>Se revisaría el alcance</h3>
+            <p>Un equipo real pediría fotos o una breve llamada para no adivinar el trabajo.</p>
+          </li>
+          <li>
+            <span class="steps__num">3</span>
+            <h3>Habría una propuesta</h3>
+            <p>Precio, duración y lo que queda fuera del servicio. Aquí no se genera esa propuesta.</p>
+          </li>
+          <li>
+            <span class="steps__num">4</span>
+            <h3>La visita se confirmaría aparte</h3>
+            <p>Solo después de una respuesta humana y un sistema de reservas. Esta página no hace esa confirmación.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--form" id="solicitud">
+      <div class="container form-layout">
+        <div class="section__heading">
+          <p class="eyebrow">Solicitud de cita</p>
+          <h2>Prueba el formulario sin reservar nada.</h2>
+          <p>
+            Los datos se quedan en tu navegador el tiempo suficiente para mostrar una vista previa. No se envían a un servidor, no abren un correo y no apartan una visita. El sistema real se puede conectar más adelante.
+          </p>
+        </div>
+
+        <form class="form-card" id="formulario-cita" data-request-form novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="fullName">Nombre</label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Ana Pérez (inventado)" required>
+              <p class="field__error" id="fullName-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="ana@correo.example" required>
+              <p class="field__error" id="email-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="phone">Teléfono</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 010-0142" inputmode="tel" required>
+              <p class="field__error" id="phone-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="service">Servicio de ejemplo</label>
+              <select id="service" name="service" required>
+                <option value="">Elige una opción</option>
+                <option value="residencial-mantenimiento">Residencial, mantenimiento</option>
+                <option value="residencial-profunda">Residencial, profunda</option>
+                <option value="comercial-oficina">Comercial, oficina</option>
+                <option value="comercial-local">Comercial, local</option>
+                <option value="sin-definir">Todavía no lo sé</option>
+              </select>
+              <p class="field__error" id="service-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="city">Ciudad</label>
+              <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="Ciudad Ejemplo" required>
+              <p class="field__error" id="city-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="preferredDate">Fecha preferida</label>
+              <input id="preferredDate" name="preferredDate" type="date" data-min-today>
+              <p class="field__hint">Opcional. No aparta ningún horario.</p>
+              <p class="field__error" id="preferredDate-error" hidden></p>
+            </div>
+
+            <div class="field field--full">
+              <label for="timeWindow">Horario de ejemplo</label>
+              <select id="timeWindow" name="timeWindow">
+                <option value="">Sin preferencia</option>
+                <option value="manana">Mañana, 8:00–12:00</option>
+                <option value="tarde">Tarde, 12:00–17:00</option>
+              </select>
+            </div>
+
+            <div class="field field--full">
+              <label for="notes">Notas</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Por ejemplo: apartamento de dos habitaciones. Dato inventado."></textarea>
+            </div>
+          </div>
+
+          <div class="preview" data-preview hidden>
+            <h3>Solicitud no enviada</h3>
+            <p data-preview-message></p>
+            <dl data-preview-list></dl>
+          </div>
+
+          <div class="field field--check">
+            <input id="demoAck" name="demoAck" type="checkbox" value="si" required>
+            <label for="demoAck">Entiendo que esto es una demostración y que no se agendará ninguna cita.</label>
+            <p class="field__error" id="demoAck-error" hidden></p>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--primary" type="submit">Probar solicitud de demostración</button>
+            <p>No aparece ningún mensaje de cita confirmada, porque no hay reserva.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section__heading">
+          <p class="eyebrow">Contacto</p>
+          <h2>Datos de contacto inventados para la maqueta.</h2>
+          <p>El teléfono usa el prefijo 555, reservado para ficción. El correo termina en .example y no tiene buzón.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Harborleaf Cleaning</h3>
+            <dl class="contact-list">
+              <div>
+                <dt>Dirección de ejemplo</dt>
+                <dd>100 Avenida Demostración, Local 4<br>Ciudad Ejemplo, OR 00000</dd>
+              </div>
+              <div>
+                <dt>Teléfono ficticio</dt>
+                <dd><a href="tel:+15550100199">(555) 010-0199</a></dd>
+              </div>
+              <div>
+                <dt>Correo ficticio</dt>
+                <dd><a href="mailto:hola@harborleaf.example">hola@harborleaf.example</a></dd>
+              </div>
+              <div>
+                <dt>Horario de muestra</dt>
+                <dd>Lunes a viernes, 8:00–17:00<br>Sábados, 9:00–13:00</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="contact-card contact-card--blue">
+            <h3>Zona de cobertura de ejemplo</h3>
+            <p>Estos nombres no son barrios reales. Evitan sugerir que la empresa atiende un lugar concreto.</p>
+            <ul class="zone-list">
+              <li>Barrio del Río <span class="sample-tag">ejemplo</span></li>
+              <li>Colinas Norte <span class="sample-tag">ejemplo</span></li>
+              <li>Centro Muestra <span class="sample-tag">ejemplo</span></li>
+              <li>Valle Claro <span class="sample-tag">ejemplo</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="logo__name">Harborleaf Cleaning</p>
+        <p>Empresa ficticia creada para esta demostración. No ofrece servicios de limpieza.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Enlaces del pie">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#solicitud">Solicitud</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__meta">© <span data-year>2026</span> Harborleaf Cleaning · demostración</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
